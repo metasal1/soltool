@@ -49,3 +49,4 @@ The input JSON file should contain an array of 64 numbers representing the Solan
 ## License
 
 MIT
+# soltool
