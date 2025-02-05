@@ -1,0 +1,34 @@
+{
+  "name": "soltool",
+  "version": "1.0.0",
+  "description": "CLI tool to convert Solana keypair JSON to base58 format",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "soltool": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "solana",
+    "keypair",
+    "base58",
+    "cli",
+    "converter"
+  ],
+  "author": "Sal Samani",
+  "license": "MIT",
+  "dependencies": {
+    "bs58": "^5.0.0",
+    "commander": "^11.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metasal1/soltool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/metasal1/soltool/issues"
+  },
+  "homepage": "https://github.com/metasal1/soltool#readme"
+}
