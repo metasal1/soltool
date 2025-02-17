@@ -1,6 +1,6 @@
 # soltool
 
-A CLI tool to convert Solana keypair JSON files to base58 format.
+A CLI tool to convert Solana keypair JSON files to base58 format and vice versa.
 
 ## Installation
 
@@ -28,6 +28,17 @@ Save output to file:
 soltool -i keypair.json -o keypair.txt
 ```
 
+Convert base58 back to JSON:
+
+```javascript
+const { base58ToJson } = require("soltool");
+
+// Convert base58 string to JSON
+const base58String = "2NEpo7TZRRrLZSi2U";
+const jsonData = base58ToJson(base58String);
+console.log(jsonData);
+```
+
 ### Options
 
 - `-i, --input <path>`: Input keypair JSON file path (required)
@@ -46,7 +57,17 @@ The input JSON file should contain an array of 64 numbers representing the Solan
 ]
 ```
 
+## API Reference
+
+### base58ToJson(base58String)
+
+Converts a base58-encoded string back to its original JSON format.
+
+- **Parameters:**
+  - `base58String` (string): The base58-encoded string to decode
+- **Returns:** The decoded JSON data
+- **Throws:** Error if the input is invalid or cannot be decoded
+
 ## License
 
 MIT
-# soltool

@@ -105,3 +105,22 @@ const main = async () => {
 
 // Run the program
 main();
+
+function base58ToJson(base58String) {
+    try {
+        // Decode base58 string to buffer
+        const buffer = base58.decode(base58String);
+
+        // Convert buffer to string and parse as JSON
+        const jsonString = buffer.toString('utf-8');
+        return JSON.parse(jsonString);
+    } catch (error) {
+        throw new Error('Invalid base58 string or JSON format');
+    }
+}
+
+// Example usage
+module.exports = {
+    // ... existing exports ...
+    base58ToJson
+};
